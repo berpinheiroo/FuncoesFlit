@@ -20,3 +20,7 @@ function VerificarDados(nome, senha){
     }
 }
 
+// 1.5.3
+
+SolicitarDados()
+console.log(VerificarDados(nome,senha))
