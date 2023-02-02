@@ -10,7 +10,7 @@ function SolicitarDados(){
 
 // 1.5.2
 
-function VerificarDados(nome, senha){
+function VerificarDados(nome,senha){
     var nome2 = prompt("Nome:")
     var senha2 = prompt("Senha:")
     if(nome2 == nome && senha2 == senha){
