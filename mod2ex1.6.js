@@ -1,3 +1,5 @@
+// 1.6.1
+
 function confirmarDados(nome){
      var nomeCompleto = nome + ' da Silva';
      var idade = 20;
