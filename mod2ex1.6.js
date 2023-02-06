@@ -43,20 +43,46 @@
 
  // 1.6.3
 
- function confirmarDados(nome) {
-        try {
-            const nomeCompleto = nome + ' da Silva'
-            function getAnoNascimento() {
-                const idade = 20
-                const ano = 2022 - idade
-                return ano
-            }
-            console.log('nome completo', nomeCompleto)
-            console.log('ano de nascimento', getAnoNascimento())
-            console.log('idade', idade)
-        }catch{
-            console.log('um erro foi encontrado e não foi possível concluir a operação')
+//  function confirmarDados(nome) {
+//         try {
+//             const nomeCompleto = nome + ' da Silva'
+//             function getAnoNascimento() {
+//                 const idade = 20
+//                 const ano = 2022 - idade
+//                 return ano
+//             }
+//             console.log('nome completo', nomeCompleto)
+//             console.log('ano de nascimento', getAnoNascimento())
+//             console.log('idade', idade)
+//         }catch{
+//             console.log('um erro foi encontrado e não foi possível concluir a operação')
+//         }
+//     }
+    
+//     confirmarDados('Marcos')
+
+
+// 1.6.4
+
+function confirmarDados(nome){
+    const nomeCompleto = nome + ' da Silva'
+    let geracao = 'millenium'
+    function getAnoNascimento(){
+        const idade = 40
+        const ano = 2022 - idade
+        return ano;
+    }
+
+    const anoDeNascimento = getAnoNascimento();
+    function geracaoDaPessoa(idade){
+        if(idade <= 1995){
+            geracao = 'geração X'
+            return geracao
         }
     }
-    
-    confirmarDados('Marcos')
+    geracao = geracaoDaPessoa(anoDeNascimento)
+    console.log('nome completo', nomeCompleto)
+    console.log('ano de nascimento', anoDeNascimento)
+    console.log('geração', geracao)
+}
+confirmarDados('Marcos')
